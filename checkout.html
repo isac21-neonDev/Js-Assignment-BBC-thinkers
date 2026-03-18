@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - thinkers shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="logo">thinkers<span>shop</span></div>
+      <div class="header-actions">
+        <a href="index.html" class="action-btn" style="text-decoration:none;">Home</a>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main style="max-width: 900px; margin: 1rem auto; padding: 0 1rem;">
+    <section class="product-section">
+      <div class="section-header">
+        <h2>Checkout</h2>
+        <p>Enter your details to complete your order.</p>
+      </div>
+      <div style="background:#fff;border-radius:10px;border:1px solid #e3e3e3;padding:1rem;">
+        <form id="checkoutForm" style="display:grid;gap:0.75rem;">
+          <label>Full Name <input id="fullName" style="width:100%;padding:0.6rem;border:1px solid #ddd;border-radius:5px;" /></label>
+          <label>Email <input id="email" style="width:100%;padding:0.6rem;border:1px solid #ddd;border-radius:5px;" /></label>
+          <label>Shipping Address <textarea id="address" style="width:100%;padding:0.6rem;border:1px solid #ddd;border-radius:5px;" rows="3"></textarea></label>
+          <label>Card Number <input id="cardNumber" style="width:100%;padding:0.6rem;border:1px solid #ddd;border-radius:5px;" /></label>
+          <button type="submit" style="border:0;background:#ffd700;padding:0.8rem 1rem;border-radius:6px;font-weight:700;cursor:pointer;">Place Order</button>
+        </form>
+      </div>
+      <div id="checkoutMessage" style="margin-top:0.75rem; color:#d00; font-weight:700;"></div>
+      <div style="margin-top:1rem;"><a class="hero-btn" href="cart.html">Back to Cart</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 BBC Thinkers.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
